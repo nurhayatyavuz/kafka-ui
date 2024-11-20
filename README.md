@@ -48,6 +48,23 @@ the cloud.
 * **Role based access control** - [manage permissions](https://docs.kafka-ui.provectus.io/configuration/rbac-role-based-access-control) to access the UI with granular precision
 * **Data masking** - [obfuscate](https://docs.kafka-ui.provectus.io/configuration/data-masking) sensitive data in topic messages
 
+# Requirements
+Before setting up UI for Apache Kafka, ensure you have the following:
+
+Docker (Recommended for quick start)
+Install Docker to run the pre-built Docker image.
+Installation guide: Docker Docs
+
+Apache Kafka
+Have a running Kafka cluster that the UI can connect to.
+
+Optional Dependencies:
+
+Schema Registry (if working with Avro, JSON Schema, or Protobuf messages).
+OAuth 2.0 Configuration (to enable secure access via GitHub, GitLab, or Google).
+Configuration File (Optional)
+For persistent setups, a dynamic_config.yaml file is recommended. Example configurations are available in the "Configuration" section below.
+
 # The Interface
 UI for Apache Kafka wraps major functions of Apache Kafka with an intuitive user interface.
 
